@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="adbdSecure">
+
+   		<Preference
+		        android:title="Remember"
+		        android:summary="For this application to be effective you need to have a password, pin, or pattern protected device. \n\n Click me to set this up."
+		        android:key="secure" />
+   		
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Boot options">
+
+   		<CheckBoxPreference
+		        android:title="onBoot"
+		        android:defaultValue="true"
+		        android:summary="On boot the adbdSecure service will be started protecting your device from being rebooted to bypass adbdSecure."
+ 		        android:key="onBoot" />
+   		
+	</PreferenceCategory>
+
+   	<PreferenceCategory android:title="Service options">
+        <CheckBoxPreference
+                android:title="adbSecure Service"
+   		        android:defaultValue="true"
+                android:summary="Enable adbdSecure service. This service is required for adbdSecure to work properly."
+                android:key="protecting" />
+	
+    </PreferenceCategory>	
+   	<PreferenceCategory android:title="Notification options">
+        <CheckBoxPreference
+                android:title="Statusbar Notification"
+   		        android:defaultValue="true"
+                android:summary="Enable statusbar notification that adbd is protected."
+                android:key="statusbar_notify" />
+
+        <CheckBoxPreference
+                android:title="Toast Notification"
+   		        android:defaultValue="true"
+                android:summary="Enable toast notifications"
+                android:key="toast_notify" />
+        	
+    </PreferenceCategory>	
+</PreferenceScreen>

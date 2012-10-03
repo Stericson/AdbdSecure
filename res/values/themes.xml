@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomButton" parent="android:style/Theme.NoTitleBar">
+        <item name="android:checkboxStyle">@style/CheckBox</item>
+        <item name="android:buttonStyle">@style/Button</item>
+        <item name="android:spinnerStyle">@style/Spinner</item>
+ 		<item name="android:spinnerItemStyle">@style/Widget.TextView.SpinnerItem</item>        
+    </style>
+</resources>
